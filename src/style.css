@@ -19,12 +19,18 @@ img {
     height: 100%;
 }
 
+
 .main-heading {
     margin: 250px;
     width: 100vh;
     background-color: hsl(216, 50%, 16%);
 
 }
+.main-heading .box{
+    max-width: 450px;
+    margin: 0 auto;
+}
+
 
 .main-heading .container {
     display: flex;
@@ -40,9 +46,6 @@ img {
     border-radius: 8px;
 }
 
-.main-heading .container .document {
-    margin: 20px 40px;
-}
 
 .main-heading .container .document h2 {
     color: hsl(0, 0%, 100%);
@@ -58,43 +61,44 @@ img {
 .main-heading .container .icons {
     display: flex;
     align-items: center;
-    gap: 100px;
+    justify-content: space-between;
+    width: 100%;
+    border-bottom: 1px solid hsl(215, 51%, 70%);
 }
+.main-heading .container .icons .left ,
+.main-heading .container .icons .right  {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+}
+
 .main-heading .container .icons img{
-    width: 17px;
+    width: 30px;
     height: 30px;
+    object-fit: contain;
 }
-.main-heading .container .icons img p:first-child{
-display: flex;
+.main-heading .container .icons .left p{
 color: hsl(178, 100%, 50%);
 justify-content: center;
 }
-.main-heading .container .icons p:last-child{
-    display: flex;
-    color: hsl(215, 51%, 70%);
-    justify-content: center;
-   position: relative; 
-}
-.container .footer::before{
-    content: "";
-    display: flex;
-    flex-direction: column;
-    border: 3px solid red;
+.main-heading .container .icons .right p{
+    color: hsl(215, 51%, 70%)
 }
 
 
 .container .footer{
-    position: relative;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
     gap: 5px;
     padding-bottom: 25px;
+    padding-top: 20px;
 }
 .container .footer img{
     width: 50px;
     height: 50px;
-    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 50%;
 }
 .container .footer .one{
 color: hsl(178, 100%, 50%);
